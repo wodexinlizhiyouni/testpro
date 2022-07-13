@@ -30,6 +30,9 @@ def login():
     print("登录操作")
     username='jery'
     return username
+    yield
+    print('teardown')
+
 class  TestDemo:
     def test_a(self,login):
         print(f"test_a  username={login}")
